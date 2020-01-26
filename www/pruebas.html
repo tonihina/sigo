@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/pruebas.css">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+<body class="fondo4">
+    <div id="contenedor_carga">
+        <img src="img/logo.png" id="logoInicio">
+        <div id="preloader_2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div data-role="page">
+        <div data-role="header" class="header">
+            Pruebas
+        </div>
+        <div data-role="content">
+            <p>
+                ¿No conoces tu estado físico actual?, no importa, hemos creado
+                un conjunto de pruebas de los ejercicios corporales básicos,
+                con los cuales trataremos de acomodarte tus rutinas de mejor
+                manera, cada ejercicio tendrá un tiempo de 30 segundos, en
+                los cuales harás la cantidad que puedas ¿Estás listo?, Vamos...
+            </p>
+            <ul data-role="listview" data-inset="true">
+                <li data-role="collapsible" data-inset="true" data-shadow="false">
+                    <h2>Flexiones</h2>
+                    <ul data-role="listview" data-theme="b">
+                        <li>
+                            Las flexiones de brazos son un ejercicio muy común en cualquier disciplina deportiva,
+                            normalmente se utiliza
+                            para mejorar la condición física y poner a tono los músculos del tren superior.
+                            <img src="img/flexion.gif" alt="">
+                        </li>
+                        <li id="flexionPrueba">
+                            <a href="#">Comenzar prueba</a>
+                        </li>
+                        <li id="flexionAcabada">
+                            <input type="button" data-icon="check" data-iconpos="top" value="Prueba Terminada">
+                        </li>
+                    </ul>
+                </li>
+                <li data-role="collapsible" data-inset="true" data-shadow="false">
+                    <h2>Sentadillas</h2>
+                    <ul data-role="listview" data-theme="b">
+                        <li>
+                            Una sentadilla es un ejercicio físico que se lleva a cabo para desarrollar los músculos y
+                            fortalecer los tendones
+                            y los ligamentos de las piernas. También permite tonificar los glúteos y aporta beneficios a
+                            la cadera.
+                            <img src="img/sentadilla.gif" alt="">
+                        </li>
+                        <li id="sentadillaPrueba">
+                            <a href="#">Comenzar prueba</a>
+                        </li>
+                        <li id="sentadillaAcabada">
+                            <input type="button" data-icon="check" data-iconpos="top" value="Prueba Terminada">
+                        </li>
+                    </ul>
+                </li>
+                <li data-role="collapsible" data-inset="true" data-shadow="false">
+                    <h2>Abdominales</h2>
+                    <ul data-role="listview" data-theme="b">
+                        <li>
+                            los ejercicios abdominales son rutinas de actividades físicas que se realizan con el
+                            objetivo de tonificar los músculos
+                            de la zona. Antes de la tonificación, es necesario eliminar la grasa que recubre dichos
+                            músculos, a través del ejercicio aeróbico y de una alimentación saludable.
+                            <img src="img/abdominal.gif" alt="">
+                        </li>
+                        <li id="abdominalesPrueba">
+                            <a href="#">Comenzar prueba</a>
+                        </li>
+                        <li id="abdominalesAcabada">
+                            <input type="button" data-icon="check" data-iconpos="top" value="Prueba Terminada">
+                        </li>
+                    </ul>
+                </li>
+                <li data-role="collapsible" data-inset="true" data-shadow="false">
+                    <h2>Fondos</h2>
+                    <ul data-role="listview" data-theme="b">
+                        <li>
+                            El fondo es un ejercicio usado en el entrenamiento de la fuerza, desarrollan principalmente
+                            los tríceps, junto con músculos sinergísticos como los deltoides, los pectorales
+                            (esternales, claviculares y menores) y los músculos romboides de la espalda.
+                            <img src="img/fondo.gif" alt="">
+                        </li>
+                        <li id="fondosPrueba">
+                            <a href="#">Comenzar prueba</a>
+                        </li>
+                        <li id="fondosAcabada">
+                            <input type="button" data-icon="check" data-iconpos="top" value="Prueba Terminada">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            hola
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        window.onload = function () {
+            setTimeout('ocultar()', 2000);
+        }
+
+        function ocultar() {
+            var contenedor = document.getElementById('contenedor_carga');
+
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+    </script>
+    <script src="js/bienvenida.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
